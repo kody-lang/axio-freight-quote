@@ -1,0 +1,9 @@
+# Source files (keep locally, not needed in repo)
+*.rtf
+*.pdf
+
+# macOS
+.DS_Store
+
+# Local dev server
+serve.py
