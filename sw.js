@@ -1,4 +1,4 @@
-const CACHE = 'axio-freight-v8';
+const CACHE = 'axio-freight-v9';
 const ASSETS = ['/', '/index.html', '/icon-192.png', '/icon-512.png', '/manifest.json'];
 
 self.addEventListener('install', e => {
