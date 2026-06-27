@@ -7,13 +7,15 @@ Quote Log Sheet: https://docs.google.com/spreadsheets/d/1TSOmdPxJaK6-GZ4uqLJcht0
 
 ## 2026-06-27 — Counties added: Surry, Stokes, Scotland → J&J NC Zone 1
 
-Service worker cache **v13 → v14**.
+Service worker cache **v13 → v15** (v14 = counties; v15 = zone relabel below).
 
 Added three previously-unserviced NC counties to **J&J Van Lines, North Carolina Zone 1** (min $170; $0.70/lb 251–1000, $0.68 1001–1999, $0.66 2000+; 20% fuel):
 - **Scotland** — on J&J's rate sheet; neighbors Hoke/Robeson/Cumberland are all J&J NC Zone 1.
 - **Surry** and **Stokes** — geographically Townsend's area but absent from Townsend's rate sheet; per Kody, quoted at **J&J NC Zone 1** rates (J&J covers them).
 
-Before, any of these addresses returned "Not serviced in this area." Now the address lookup routes them to J&J NC Zone 1. Verified end-to-end via Mapbox (Mount Airy→Surry, King→Stokes, Laurinburg→Scotland all resolve to J&J NC Zone 1). Commit follows.
+Before, any of these addresses returned "Not serviced in this area." Now the address lookup routes them to J&J NC Zone 1. Verified end-to-end via Mapbox (Mount Airy→Surry, King→Stokes, Laurinburg→Scotland all resolve to J&J NC Zone 1). Commit `dfda459`.
+
+**Zone relabel (v15):** since Zone 1 now spans NW (Surry/Stokes) and Sandhills (Scotland) — not just the east — renamed it **"NC Zone 1 — Inland"** (subtitle "Inland NC", was "NC Zone 1 — Eastern" / "Inner Eastern NC"). Also fixed both NC zone names to use a real em-dash (they had a stray control character). J&J NC Zone 2 stays "NC Zone 2 — Coastal." Display-only — no rate or routing change. (Other states' zone labels still use the old control-char dash — left as-is; offer a global cleanup if wanted.)
 
 ---
 
