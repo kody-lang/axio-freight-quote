@@ -5,6 +5,17 @@ Quote Log Sheet: https://docs.google.com/spreadsheets/d/1TSOmdPxJaK6-GZ4uqLJcht0
 
 ---
 
+## 2026-06-27
+
+Service worker cache **v12 → v13** (forces installed home-screen apps to update — close & reopen the app once on Wi-Fi).
+
+### Overweight threshold 300 → 375 lbs (per piece, both carriers)
+The overweight-surcharge note now reads **"$1.00/lb over 375 lbs per piece"** (was 300), for **both Townsend and J&J** — matching the carriers' updated rate sheets.
+- Updated the yellow on-result warning banner ("Pieces over **375** lbs may incur $1.00/lb overweight surcharge per piece") and **both** carriers' Policies panels. The banner's appearance threshold also moved to 375 (it shows when order weight passes 375).
+- **No calculation change:** the surcharge stays informational only, exactly as before — the calculator does **not** add it to the quote and does **not** try to decipher single-piece vs. total-order weight (per request, since a piece over 375 lbs can't be represented in the app today — the picker tops out at 325 lbs and the weight box is an order total). Quote totals are unchanged.
+
+---
+
 ## 2026-06-13
 
 Service worker cache **v8 → v12** (forces installed home-screen apps to update — close & reopen the app once on Wi-Fi).
